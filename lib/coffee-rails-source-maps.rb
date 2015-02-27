@@ -33,7 +33,7 @@ if Rails.env.development?
           map_dir = Rails.root.join("public/" + Rails.configuration.assets.prefix, "source_maps", rel_path)
           map_dir.mkpath
           puts "SOURCEMAP\r\n"
-          puts mkpath
+          puts map_dir
           map_file    = map_dir.join("#{clean_name}.map")
           coffee_file = map_dir.join("#{clean_name}.coffee")
 
